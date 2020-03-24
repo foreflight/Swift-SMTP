@@ -15,7 +15,6 @@
  **/
 
 import Foundation
-import LoggerAPI
 
 /// Error type for SwiftSMTP.
 public enum SMTPError: Error, CustomStringConvertible {
@@ -72,6 +71,6 @@ public enum SMTPError: Error, CustomStringConvertible {
 
     init(_ error: SMTPError) {
         self = error
-        Log.error(description)
+//        Log.error(description)
     }
 }
